@@ -46,7 +46,7 @@ def utt2spk(filenames):
     for filename in filenames:
         basename = filename.split('.')[0]
         spk = 'global'
-        results.append("{} {}".format(basename, spk))
+        results.append("{} {}".format(spk, basename))
 
     return '\n'.join(sorted(results))
 
